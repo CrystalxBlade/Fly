@@ -7,7 +7,7 @@ public class Flappy : MonoBehaviour
     Animator anim;
     Collider2D coll;
     Rigidbody2D rb; 
-    
+    [SerializeField] GameObject gameOverScreen;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -29,5 +29,6 @@ public class Flappy : MonoBehaviour
         isDead = true;
         coll.enabled = false;
         anim.Play("Die");
+        gameOverScreen.SetActive(true);
     }
 }
