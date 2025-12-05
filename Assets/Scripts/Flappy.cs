@@ -7,6 +7,7 @@ public class Flappy : MonoBehaviour
     Animator anim;
     Collider2D coll;
     Rigidbody2D rb; 
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
