@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class ScoreCounter : MonoBehaviour
 {
-    public int score;
+    public static int score;
     public Text scoreText; 
     void Start()
     {

@@ -8,6 +8,17 @@ public class GameOver : MonoBehaviour
 
     private void OnEnable()
     {
-        
+        int score = ScoreCounter.score;
+
+        if(score > PlayerPrefs.GetInt("HighScore"))
+        {
+            PlayerPrefs.SetInt("HighScore", score);
+            highScore.text = score.ToString();
+        }
+        else
+        {
+            highScore.text = PlayerPrefs.GetInt("HighScore").ToString();
+        }
+        currScore.text = score.ToString();
     }
 }
