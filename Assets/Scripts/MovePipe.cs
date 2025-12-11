@@ -7,5 +7,8 @@ public class MovePipe : MonoBehaviour
     {
         transform.position += Vector3.left * pipeSpeed * Time.deltaTime; 
         Destroy(gameObject, 4f);
+
+        
+        
     }
 }
