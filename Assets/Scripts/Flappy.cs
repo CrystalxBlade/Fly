@@ -8,6 +8,7 @@ public class Flappy : MonoBehaviour
     Collider2D coll;
     Rigidbody2D rb; 
     [SerializeField] GameObject gameOverScreen;
+    public SoundManager sound;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -20,6 +21,7 @@ public class Flappy : MonoBehaviour
         if(Input.GetMouseButtonDown(0) && isDead == false)
         {
             rb.linearVelocity = Vector2.up * speed;
+            sound.Play_Flap();
         }
     }
 
@@ -30,5 +32,6 @@ public class Flappy : MonoBehaviour
         coll.enabled = false;
         anim.Play("Die");
         gameOverScreen.SetActive(true);
+        sound.Play_Hit();
     }
 }
