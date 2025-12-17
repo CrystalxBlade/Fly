@@ -33,5 +33,6 @@ public class Flappy : MonoBehaviour
         anim.Play("Die");
         gameOverScreen.SetActive(true);
         sound.Play_Hit();
+        sound.Play_Slap();
     }
 }

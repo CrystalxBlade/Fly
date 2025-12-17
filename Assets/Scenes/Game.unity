@@ -628,6 +628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5f0175f6c04e384cb9662adaa552a43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fl: {fileID: 313451244}
   sound: {fileID: 640234348}
   scoreText: {fileID: 1160940848}
 --- !u!1 &389468719
@@ -1431,8 +1432,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SFX_Source: {fileID: 1459115921}
   flap: {fileID: 8300000, guid: 466a2493a5c29a1418436124fee91d17, type: 3}
-  hit: {fileID: 8300000, guid: 68c9b611a53a46e4eac5f3c8b2260626, type: 3}
-  point: {fileID: 8300000, guid: afbe3b24385bd6243aca33edfaa53292, type: 3}
+  hit: {fileID: 8300000, guid: 30551df31a6de214dafed89b17de46e0, type: 3}
+  point: {fileID: 8300000, guid: f0575d6b8589b8f40b112c52dd454dd5, type: 3}
+  slap: {fileID: 8300000, guid: 68c9b611a53a46e4eac5f3c8b2260626, type: 3}
 --- !u!82 &640234349
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1442,17 +1444,17 @@ AudioSource:
   m_GameObject: {fileID: 640234347}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -2662797412381587955, guid: a3fab3896fb7ed1479e32f679771a2aa, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c3b38443e1ee74e4ebcbd6e4f9fccf38, type: 3}
+  m_Resource: {fileID: 8300000, guid: 93e4b41309c3aa7468213ef8cd9a9e2b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 119
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -2879,7 +2881,7 @@ AudioSource:
   m_GameObject: {fileID: 1459115920}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 4374185957141087794, guid: a3fab3896fb7ed1479e32f679771a2aa, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
