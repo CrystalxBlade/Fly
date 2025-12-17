@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class ScoreCounter : MonoBehaviour
 {
+    public Flappy fl;
     public SoundManager sound;
     public static int score;
     public Text scoreText; 
@@ -14,9 +15,12 @@ public class ScoreCounter : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("counter"))
         {
-            score++;
-            scoreText.text = score.ToString();
-            sound.Play_Point();
+            if(fl.isDead == false)
+            {
+               score++;
+               scoreText.text = score.ToString();
+               sound.Play_Point();
+            }
         }
     }
 }

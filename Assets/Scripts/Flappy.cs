@@ -3,7 +3,7 @@ using UnityEngine;
 public class Flappy : MonoBehaviour
 {
     [SerializeField] float speed;
-    [SerializeField] bool isDead = false;
+    [SerializeField] public bool isDead = false;
     Animator anim;
     Collider2D coll;
     Rigidbody2D rb; 
