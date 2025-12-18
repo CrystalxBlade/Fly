@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class TapToPlay : MonoBehaviour
 {
+    [SerializeField] GameObject button;
+
     private void Awake()
     {
         Time.timeScale = 0;
@@ -12,6 +14,7 @@ public class TapToPlay : MonoBehaviour
         {
             Time.timeScale = 1;
             Destroy(gameObject);
+            button.SetActive(true);
         }
     }
 }

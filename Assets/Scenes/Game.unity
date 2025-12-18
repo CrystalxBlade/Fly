@@ -421,7 +421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db7a5401b8366845a597422ab03e710, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallexSpeed: 4
+  parallexSpeed: 6
   endPos: -10.8
 --- !u!1 &313451239
 GameObject:
@@ -1238,6 +1238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86dde6a40a56e844da6e46b0b0490c97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  button: {fileID: 821762529}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1851,7 +1852,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &821762530
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2589,7 +2590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db7a5401b8366845a597422ab03e710, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallexSpeed: 3
+  parallexSpeed: 4
   endPos: -10.8
 --- !u!1 &1380019515
 GameObject:
